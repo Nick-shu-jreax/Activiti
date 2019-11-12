@@ -18,10 +18,6 @@ import org.activiti.engine.api.internal.Internal;
 import org.activiti.engine.impl.db.HasRevision;
 import org.activiti.engine.repository.ProcessDefinition;
 
-/**
-
-
- */
 @Internal
 public interface ProcessDefinitionEntity extends ProcessDefinition, Entity, HasRevision {
 
@@ -66,5 +62,9 @@ public interface ProcessDefinitionEntity extends ProcessDefinition, Entity, HasR
   String getEngineVersion();
 
   void setEngineVersion(String engineVersion);
+
+  void setAppVersion(Integer appVersion);
+
+  Integer getAppVersion();
   
 }
